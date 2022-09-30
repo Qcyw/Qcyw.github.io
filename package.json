@@ -5,36 +5,41 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist -b master"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "vite": "^3.1.0"
   },
   "main": "main.js",
   "dependencies": {
-    "has": "^1.0.3",
     "esbuild": "^0.15.10",
-    "nanoid": "^3.3.4",
-    "function-bind": "^1.1.1",
-    "is-core-module": "^2.10.0",
+    "esbuild-darwin-64": "^0.15.10",
     "fsevents": "^2.3.2",
-    "postcss": "^8.4.16",
-    "source-map-js": "^1.0.2",
+    "function-bind": "^1.1.1",
+    "has": "^1.0.3",
+    "is-core-module": "^2.10.0",
+    "nanoid": "^3.3.4",
     "path-parse": "^1.0.7",
     "picocolors": "^1.0.0",
-    "rollup": "^2.78.1",
+    "postcss": "^8.4.16",
     "resolve": "^1.22.1",
-    "esbuild-darwin-64": "^0.15.10",
+    "rollup": "^2.78.1",
+    "source-map-js": "^1.0.2",
     "supports-preserve-symlinks-flag": "^1.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Qcyw/Qcyw.github.io.git"
+    "url": "https://github.com/Qcyw/Qcyw.github.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Qcyw/Qcyw.github.io/issues"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   },
   "homepage": "https://github.com/Qcyw/Qcyw.github.io#readme",
   "description": ""
